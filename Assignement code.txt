@@ -132,35 +132,16 @@ namespace Puzzle
             }
         }
 
-        public void button9_Click(object sender, EventArgs e)
-        {
-            
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-
-            openFileDialog1.Filter = "Image Files (JPEG,GIF,BMP,PNG,JPG)|*.jpeg;*.bmp;*.png;*.jpg";
-
-
-            openFileDialog1.RestoreDirectory = true;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                foreach (Button b in panel1.Controls)
-                 b.Enabled = true;
-                orginal = Image.FromFile(openFileDialog1.FileName);
-                pictureBox1.Image = orginal;
-                cropImageToImages(orginal, 270, 270);
-                AddImagestoButton(cast);
-
-            }
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           /* foreach (Button b in panel1.Controls)
+         foreach (Button b in panel1.Controls)
                 b.Enabled = true;
             Image orginal = Image.FromFile(Application.StartupPath + "\\game.jpg");
             pictureBox1.BackgroundImage = orginal;
             cropImageToImages(orginal, 270, 270);
-            AddImagestoButton(images);*/
+            AddImagestoButton(images);
         }
         
         }
