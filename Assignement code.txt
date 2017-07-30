@@ -136,12 +136,12 @@ namespace Puzzle
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         foreach (Button b in panel1.Controls)
+         /*oreach (Button b in panel1.Controls)
                 b.Enabled = true;
             Image orginal = Image.FromFile(Application.StartupPath + "\\game.jpg");
             pictureBox1.BackgroundImage = orginal;
             cropImageToImages(orginal, 270, 270);
-            AddImagestoButton(images);
+            AddImagestoButton(images);*/
         }
         
         }
